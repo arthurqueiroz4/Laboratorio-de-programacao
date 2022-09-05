@@ -5,5 +5,5 @@ int main (){
     printf("Digite dois numeros espacados: ");
     scanf("%d",&x);
     scanf("%d",&y);
-    printf("SOMA: %d\nPRODUTO: %d\nDIFERENCA: %d\nQUOCIENTE: %d\nRESTO: %d", x+y, x*y, x-y, x/y, x%y);
+    printf("SOMA: %d\nPRODUTO: %d\nDIFERENCA: %d\nQUOCIENTE: %.2f\nRESTO: %d", x+y, x*y, x-y, x/y, x%y);
     }
