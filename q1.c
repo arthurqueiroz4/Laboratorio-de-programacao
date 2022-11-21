@@ -2,22 +2,25 @@
 #include <stdio.h>
 
 struct aluno{
-    int n1;
-    int n2;
+    float n1;
+    float n2;
     float m;
 };
 
 int main() {
     struct aluno jon;
     struct aluno levy;
+    puts("JON N1:");
+    scanf("%f", &jon.n1);
+    puts("JON N2:");
+    scanf("%f", &jon.n2);
+    puts("LEVY N1:");
+    scanf("%f", &levy.n1);
+    puts("LEVY N2:");
+    scanf("%f", &levy.n2);
     
-    jon.n1 = 10;
-    jon.n2 = 5;
-    
-    jon.m = ((float)jon.n1 + jon.n2)/2;
+    jon.m = (jon.n1 + jon.n2)/2;
     printf("Media de Jon: %.2f", jon.m);
-    levy.n1 = 10;
-    levy.n2 = 9;
     levy.m = ((float)levy.n1 + levy.n2)/2;
     printf("\nMedia de Levy: %.2f", levy.m);
 
